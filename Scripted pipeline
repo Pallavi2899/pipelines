@@ -1,10 +1,22 @@
-Pipeline {
-agent any
-stages
-{
-stage (1st stage)
+pipeline {
+    agent any
 
-echo 'monday'
-}
+    stages {
+        stage('1st stage') {
+            steps {
+                echo 'Monday'
+            }
+        }
+        stage('2nd stage') {
+            steps {
+                sleep 30
+            }
+        }
+        stage('3rd stage') {
+            steps {
+                echo 'Tuesday'
+            }
+        }    
+    }
 }
 
