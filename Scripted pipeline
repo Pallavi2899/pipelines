@@ -1,0 +1,10 @@
+Pipeline {
+agent any
+stages
+{
+stage (1st stage)
+
+echo 'monday'
+}
+}
+
